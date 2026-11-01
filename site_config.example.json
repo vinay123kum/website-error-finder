@@ -1,0 +1,63 @@
+{
+  "max_pages": 150,
+  "exclude_patterns": [
+    "/wp-json/",
+    "/feed/",
+    "?replytocom=",
+    "/tag/"
+  ],
+  "locations": [
+    {
+      "name": "Downtown",
+      "slugs": [
+        "downtown"
+      ],
+      "phones": [
+        "410-555-0101"
+      ],
+      "emails": [
+        "downtown@example.com"
+      ],
+      "address": "123 Main St, Downtown, ST 00000",
+      "booking_url": "/downtown/book/",
+      "hours": "Mon-Sun 10am-8pm"
+    },
+    {
+      "name": "Uptown",
+      "slugs": [
+        "uptown"
+      ],
+      "phones": [
+        "301-555-0202"
+      ],
+      "emails": [
+        "uptown@example.com"
+      ],
+      "address": "456 Pike Rd, Uptown, ST 00000",
+      "booking_url": "/uptown/book/"
+    }
+  ],
+  "phones": [
+    "800-555-0000"
+  ],
+  "emails": [
+    "info@example.com"
+  ],
+  "allowed_external_domains": [
+    "facebook.com",
+    "instagram.com",
+    "google.com",
+    "youtube.com"
+  ],
+  "spelling_whitelist": [
+    "Downtown",
+    "Uptown",
+    "playzone"
+  ],
+  "extra_hosts": [
+    "ecom.roller.app"
+  ],
+  "follow_external_ctas": true,
+  "external_page_cap": 8,
+  "alert_email": "owner@example.com"
+}

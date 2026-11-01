@@ -1,0 +1,13 @@
+{
+  "smtp_host": "smtp.gmail.com",
+  "smtp_port": 587,
+  "smtp_user": "you@gmail.com",
+  "smtp_password": "app-password",
+  "from": "Website Error Finder <you@gmail.com>",
+  "to": [
+    "team@example.com"
+  ],
+  "min_severity": "high",
+  "always_send": false,
+  "report_base_url": "http://127.0.0.1:8030"
+}
