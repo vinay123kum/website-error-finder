@@ -21,6 +21,8 @@ CREATE INDEX IF NOT EXISTS idx_issues_fp ON issues(fingerprint);
 class Store:
     def __init__(self, path: str | Path):
         self.path = str(path)
+        from pathlib import Path
+        Path(self.path).parent.mkdir(parents=True, exist_ok=True)
         self.conn = sqlite3.connect(self.path, check_same_thread=False)
         self.conn.row_factory = sqlite3.Row
         self.conn.executescript(SCHEMA)
